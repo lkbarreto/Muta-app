@@ -1,15 +1,15 @@
-import * as React from 'react';
+import React, { useState , useContext, useEffect} from "react";
+import "./index.css";
+import { AuthContext } from '../../context/authProvider';
 import SideBar from '../../components/SideBar';
+import Collection from './components/Collection';
 
 export default function Home() {
-
-    const handleDrawerOpen = () => {
-
-    };
-
+   
     return (
-       <div>
+       <div className='mainHome'>
            <SideBar></SideBar>
+           <Collection></Collection>
        </div>
     );
 }

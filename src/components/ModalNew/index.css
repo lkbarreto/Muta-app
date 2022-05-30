@@ -1,0 +1,200 @@
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 434px;
+  height: 650px;
+  padding: 51px;
+  background: white;
+  color: white;
+  z-index: 10;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.modalHeader {
+  height: 50px;
+  background: white;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+
+  color: #1A1A1A;
+  text-align: left;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 14px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContent form .clientSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+
+.subtitle {
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9E9E9E;
+  margin-bottom: 15px;
+}
+
+.modalContent form .clientSection select {
+  height: 36px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #757575;
+}
+
+
+.modalContent form .dataSection .rowForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modalContent form .dataSection .rowForm label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #616161;
+}
+
+.modalContent form .dataSection .rowForm input {
+  width: 79px;
+  height: 30px;
+  padding: 6px 1px;
+  gap: 4px;
+  text-align: right;
+  border: 1px solid #757575;
+  border-radius: 3px;
+}
+
+.modalContent form .dataSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+.totalSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.totalSection .subtitle {
+  text-align: right;
+}
+
+.totalSection .total {
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #616161;
+
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.createBtn {
+  cursor: pointer;
+  font-weight: 500;
+  width:100%;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: none;
+  color: #fff;
+  background:  #EBB36B;
+  transition: all 0.25s ease;
+}
+
+.createBtnDisabled{
+  font-weight: 500;
+  width:100%;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: none;
+  color: #fff;
+  background:   #E0E0E0;
+  transition: all 0.25s ease;
+}
+
+.createBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(235, 179, 107, 0.6);
+  transform: translateY(-5px);
+  background:  #EBB36B;
+}
+
+.cancelBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: none;
+  color: #2c3e50;
+  background: #fcfcfc;
+  transition: all 0.25s ease;
+}
+
+.cancelBtn:hover {
+  box-shadow: none;
+  transform: none;
+  background: whitesmoke;
+}
